@@ -1,2 +1,3 @@
 [build]
-  publish = "public"  # Assuming your static files are in the 'public' directory
+  publish = "public" 
+  functions = "functions"
