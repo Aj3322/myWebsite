@@ -5,10 +5,10 @@ const app = express();
 const router = express.Router();
 
 // Require your database connection file
-require("../src/db/conn");
+require("./db/conn");
 
 // Import your routes
-const routes = require("../src/router/router");
+const routes = require("./router/router");
 
 // Use middleware to parse JSON bodies
 app.use(express.json());
@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
 });
 
 // Mount the router at the appropriate base path
-app.use("/.netlify/functions/api/", router);
+app.use("/", router);
 
 // Export the Express app wrapped with serverless-http
 module.exports.handler = serverless(app);
