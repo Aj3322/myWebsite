@@ -5,7 +5,7 @@ const routes = require("./router/router");
 const path = require("path");
 app.use(express.json());
 app.use(routes);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, "../public")));
 
