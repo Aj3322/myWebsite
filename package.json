@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "D:/myWebSite/node_modules/.bin/netlify-lambda serve src",
     "dev": "nodemon functions/app.js",
-    "build": "node_modules/.bin/netlify-lambda build Src"
   },
   "keywords": [],
   "author": "Aj_Styles",
